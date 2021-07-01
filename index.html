@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+</head>
+<body>
+
+    <!-- MENU DROITE  -->
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <!-- 1er bloc / PRESENTATION  -->
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="img/vitre.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">Portfolio_Dev_Jr</h5>
+            <div>
+                <h4 class="debut"><span>Bonjour, </span> je suis</h4>
+                <h2>Jeremy</h2>
+                <h4>Développeur <span>Web</span> Junior</h4>
+                <p>Issu d'un parcours commercial, j'ai fais une reconversion dans le développement web depuis 1 an que j'exerce avec passion et inspiration.<br><br>
+                En septembre 2021 je commence une formation en alternance de concepteur/développeur d'application à l'école La Plateforme Marseille...<br><br>
+                Actuellement à la recherche d'un contrat de professionnalisation sur Marseille et alentours - #opentowork
+                </p>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://fr.linkedin.com/in/j%C3%A9r%C3%A9my-breuillard-4a548a144"><img src="img/linkedin.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/dje_lindien/"><img src="img/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 2eme bloc / COMPETENCES  -->
+    <section class="about" id="about">
+        <div id="definition" class="title white">
+            <h2>Mes compétences</h2>
+        </div>
+
+        <div class="title white">
+            <div class="h3"><h3>Marketing  /  Commerce</h3>
+            <hr></div>
+            <div><h3>Microsoft Office</h3></div> 
+        </div>
+
+        <div class="content">
+            <div class="exp">
+                <div class="gauche">
+                    <div class="textBx align-gauche barre">
+                        <div class="progression">
+                            <label>HTML</label>
+                            <div class="progress-bar" id="html"></div>
+                        </div>
+                        <div class="progression">
+                            <label>CSS</label>
+                            <div class="progress-bar" id="css"></div>
+                        </div>
+                        <div class="progression">
+                            <label>PHP</label>
+                            <div class="progress-bar" id="php"></div>
+                        </div>
+                        <div class="progression">
+                            <label>JS</label>
+                            <div class="progress-bar" id="js"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="textBx align-droite barre">
+                        <div class="progression">
+                            <label>Bootstrap</label>
+                            <div class="progress-bar" id="bts"></div>
+                        </div>
+                        <div class="progression">
+                            <label>Wordpress</label>
+                            <div class="progress-bar" id="wp"></div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <hr class="trait">
+            <div class="picto">
+                <div id="un" class="imgBx">
+                    <img src="img/ballon-rugby.png" alt="yo" name="yoo" value="t">
+                </div>
+                <div id="deux" class="imgBx">
+                    <img src="img/velo.png" alt="">
+                </div>
+                <div id="trois" class="imgBx">
+                    <img src="img/arma.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3eme bloc / MES PROJETS  -->
+    <section class="work" id="work">
+        <div class="title">
+            <h2>Mes projets</h2>
+        </div>
+
+        <div class="content">
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/San.png" alt="">
+                </div>
+                <div class="textBx">
+                    <a href="http://veloluberon.alwaysdata.net/">
+                        <h3>Projet 1<br><br>
+                            <small>HTML / CSS / PHP / JS / Bootstrap<br><br>
+                            Site e-commerce avec espace utilisateur et administrateur<br>-en cours-</small>
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/wpamich.png" alt="">
+                </div>
+                <div class="textBx">
+                    <a href="https://bob.alwaysdata.net/">
+                        <h3>Projet 2<br><br>
+                            <small>Wordpress / Elementor<br><br>
+                            Portfolio art</small>
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/fd.jpg" alt="">
+                </div>
+                <div class="textBx">
+                    <a href="https://www.facebook.com/wheelieride.eu/">
+                        <h3>Projet 3<br><br>
+                            <small>Dropshipping -> Shopify <br><br> vente accessoires de vélo<br>-fermé depuis 2019-</small>
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bdp">
+            <div class="title">
+                <h2>Mes ambitions professionnelles</h2>
+            </div>
+
+            <div class="content">
+            <div class="pictoBx">
+            <i class="fas fa-leaf"></i>
+                <h4>Green Tech</h4></div>
+                <div class="pictoBx"><i class="fas fa-running"></i>
+                <h4>Sport & Digital</h4></div>
+                <div class="pictoBx"><i class="fas fa-server"></i>
+                <h4>Back-End</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4eme bloc / CONTACT  -->
+    <section class="contact" id="contact">
+        <div class="title white contact">
+            <h2>Contact</h2>
+        </div>
+        <div class="ligne">
+            <div class="title white">
+                <p>
+                    <a href="https://github.com/Dje-Lindien">
+                        <img src="img/github.png" alt=""><br>
+                        GitHub
+                    </a>
+                </p>
+            </div>
+            <div class="title white">
+                <p>
+                    <a href="CV.pdf" download>
+                        <img src="img/cvv.png" alt=""><br>
+                        Télécharger
+                    </a>
+                </p>           
+            </div>
+            <div class="title white">
+                <p>
+                    <button id="copy" type="button"><img src="img/mail.png" alt="" ></button>
+                    <br>
+                    <input type="text" readonly id="to-copy" value="jerem.brld@gmail.com">
+                </p> 
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu caché en JS coté droit  -->
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Compétences</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Projets</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+
+    <!-- JAVASCRIPT  -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active')
+
+            sidebar.classList.toggle('active')
+        }
+    </script>
+
+    <script>
+        var toCopy  = document.getElementById( 'to-copy' ),
+        btnCopy = document.getElementById( 'copy' );
+
+        btnCopy.addEventListener( 'click', function(){
+        toCopy.select();
+        document.execCommand( 'copy' );
+        return false;
+        });
+    </script>
+
+</html>
