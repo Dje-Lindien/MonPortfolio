@@ -31,13 +31,13 @@
 }
 
 section {
-    padding: 150px;
+    padding: 80px 150px;
     min-height: 100vh;
 }
 
 section.contact {
     max-height: 60vh;
-    min-height: 591px;
+    min-height: 800px;
 }
 
 .banner {
@@ -238,7 +238,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 50px;
 }
 
 .about .content .textBx {
@@ -252,7 +252,7 @@ p {
 }
 
 .about .content hr.trait {
-    bottom: -150px;
+    bottom: -60px;
     position: relative;
     background: linear-gradient(to right, black, black, black, black, rgb(48, 47, 47), black, black, black, black);
 }
@@ -365,7 +365,7 @@ label {
 }
 
 .about .title.white .h3 h3 {
-    padding-top: 110px;
+    padding-top: 70px;
     text-align: left;
 }
 
@@ -374,11 +374,11 @@ label {
 }
 
 .about .content .picto {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     display: inline-flex;
     justify-content: space-evenly;
     position: relative;
-    bottom: -100px;    
+    bottom: -70px;    
 }
 
 .about .content .picto img {
@@ -459,13 +459,13 @@ label {
 }
 
 .work .bdp  {
-    padding-top: 28vh;
+    padding-top: 14vh;
     justify-content: space-around;
 }
 
 .work .bdp .content {
     justify-content: space-evenly;
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 .work .bdp .pictoBx {
@@ -489,7 +489,7 @@ label {
 }
 
 .contact .title.white.contact {
-    margin-bottom: 65px;
+    margin-bottom: 160px;
 }
 
 .contact .title.white a {
