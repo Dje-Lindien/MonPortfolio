@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
 
@@ -21,14 +24,16 @@
             <img src="img/vitre.jpg" alt="">
         </div>
         <div class="contentBx">
-            <h5 class="logoText">Portfolio_Dev_Jr</h5>
-            <div>
+            <h5 class="logoText">Portfolio_Dev</h5>
+            <div class="presentation_container">
                 <h4 class="debut"><span>Bonjour, </span> je suis</h4>
                 <h2>Jeremy</h2>
-                <h4>Développeur <span>Web</span> Junior</h4>
-                <p>Issu d'un parcours commercial, j'ai fais une reconversion dans le développement web depuis 1 an que j'exerce avec passion et inspiration.<br><br>
-                En septembre 2021 je commence une formation en alternance de concepteur/développeur d'application à l'école La Plateforme Marseille...<br><br>
-                Actuellement à la recherche d'un contrat de professionnalisation sur Marseille et alentours - #opentowork
+                <h4>Concepteur / Développeur d'<span>Application</span></h4>
+                <p>Il y a 2 ans je me suis lancé dans la programmation informatique via une reconversion professionnelle.<br><br>J'ai poursuivi mon cursus en 2e année où je viens d'obtenir le titre de Concepteur/développeur d'application.<br> Toujours sur ma lancée me voici en 3e année pour préparer un master Chef de projet web / Développement d'application : le rythme de travail est en alternance encadré par l'Institut G4 à Marseille.<br>C'est un rythme que j'apprécie car j'ai l'assurance d'apprendre mon métier puis de fournir du travail en même temps.
+                <br><br>
+                Actuellement je suis à la recherche d'un contrat de professionnalisation pour une durée de 24 mois dans la zone Marseille et alentours.
+		<br><br>
+		Vous trouverez de quoi me contacter ici-même, bonne lecture !
                 </p>
                 <a href="#contact" class="btn">Contact</a>
             </div>
@@ -45,58 +50,119 @@
             <h2>Mes compétences</h2>
         </div>
 
-        <div class="title white">
-            <div class="h3"><h3>Marketing  /  Commerce / Bureautique</h3>
-            <hr></div>
-            <div><h3>Consciencieux / Lâche-rien / Fiable</h3></div> 
-        </div>
-
         <div class="content">
             <div class="exp">
-                <div class="gauche">
-                    <div class="textBx align-gauche barre">
-                        <div class="progression">
-                            <label>HTML</label>
-                            <div class="progress-bar" id="html"></div>
+                <div class="text_exp" style="color:white">
+                    <p><span>J</span>'ai eu l'opportunité d'apprendre le code via des formations au sein de l'Afpa, de l'école La Plateforme ainsi que des projets personnels qui m'ont fait découvrir ce qui me plaisait dans le développement web : l'aspect <span>c</span>onception et le <span>d</span>éveloppement lui-même<br><br>
+                    <span>D</span>ans l'optique de devenir <span>f</span>ull-stack j'apprécie mener un projet de A à Z et créer le côté back-end et front-end d'une application
+                    <br><br>
+                    <span>C</span>ôté vie de tous les jours je suis quelqu'un qui aime passer du temps avec ses proches, faire du vélo ou du ski quand la saison se présente, jouer aux jeux vidéos ou encore randonner dans notre belle région PACA
+                    </p>
+                </div>
+
+                <div class="icon_exp">
+                    <div class="drop right">
+                        <div class="image_icon" id="">
+                            <img id="img" src="./img/linux.png" class="linux">
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">linux
+                                <div class="background"></div>
+                            </div>
                         </div>
-                        <div class="progression">
-                            <label>CSS</label>
-                            <div class="progress-bar" id="css"></div>
+                    </div>
+                    <div class="drop left">
+                            <ion-icon class="icon" name="logo-html5">2</ion-icon>
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">html
+                                <div class="background"></div>
+                            </div>
+                    </div>
+                    <div class="drop left">
+                            <ion-icon class="icon" name="logo-css3"></ion-icon>
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">css
+                                <div class="background"></div>
+                            </div>
+                    </div>
+                    <div class="drop left">
+                            <ion-icon class="icon" name="logo-javascript"></ion-icon>
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">
+                                <small>javascript</small>
+                                <div class="background"></div>
+                            </div>
+                    </div>
+                    <div class="drop left">
+                            <ion-icon class="icon" name="logo-python"></ion-icon>
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">python
+                                <div class="background"></div>
+                            </div>
+                    </div>
+                    <div class="drop left">
+                        <ion-icon class="icon" name="logo-react"></ion-icon></ion-icon>
+                        <a href="#" class="icon_text"></a>
+                        <div class="text_drop">react native
+                            <div class="background"></div>
                         </div>
-                        <div class="progression">
-                            <label>PHP</label>
-                            <div class="progress-bar" id="php"></div>
+                    </div>
+                    <div class="drop right">
+                        <div class="image_icon" id="">
+                            <img id="img" src="./img/pug.png" class="pug">
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">pug js
+                                <div class="background"></div>
+                            </div>
                         </div>
-                        <div class="progression">
-                            <label>JS</label>
-                            <div class="progress-bar" id="js"></div>
+                    </div>
+                    <div class="drop right">
+                        <div class="image_icon" id="">
+                            <img id="img" src="./img/bootstrap.png" class="bootstrap">
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">
+                                <small>bootstrap</small>
+                                <div class="background"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop right">
+                            <ion-icon class="icon" name="logo-nodejs"></ion-icon>
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">node js
+                                <div class="background"></div>
+                            </div>
+                    </div>
+                    <div class="drop right">
+                        <div class="image_icon" id="">
+                            <img id="img" src="./img/php.png" class="php">
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">php
+                                <div class="background"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop right">
+                        <div class="image_icon" id="">
+                            <img id="img" src="./img/perl.png" class="perl">
+                            <a href="#" class="icon_text"></a>
+                            <div class="text_drop">perl
+                                <div class="background"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="droite">
-                    <div class="textBx align-droite barre">
-                        <div class="progression">
-                            <label>Bootstrap</label>
-                            <div class="progress-bar" id="bts"></div>
-                        </div>
-                        <div class="progression">
-                            <label>Wordpress</label>
-                            <div class="progress-bar" id="wp"></div>
-                        </div>
-                    </div>
-                </div>  
             </div>
 
             <hr class="trait">
             <div class="picto">
                 <div id="un" class="imgBx">
-                    <img src="img/ballon-rugby.png" alt="yo" name="yoo" value="t">
+                    <img src="img/ballon-rugby.png" title="Rugby" value="t">
                 </div>
                 <div id="deux" class="imgBx">
-                    <img src="img/velo.png" alt="">
+                    <img src="img/velo.png" title="Vélo de route" alt="">
                 </div>
                 <div id="trois" class="imgBx">
-                    <img src="img/arma.png" alt="">
+                    <img src="img/arma.png" title="Ski freestyle" alt="">
                 </div>
             </div>
         </div>
@@ -149,21 +215,51 @@
                     </a>
                 </div>
             </div>
+
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/SCLinkedInClone2.png" alt="">
+                </div>
+                <div class="textBx">
+                    <a href="https://linkedin-clone-e2db5.web.app/">
+                        <h3>Projet 4<br><br>
+                            <small>React JS / Firebase <br><br>Clone LinkedIn<h6>cf. Sonny Sangha</h6><br>-Créez un compte-</small>
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/virus.png" alt="">
+                </div>
+                <div class="textBx">
+                    <a href="http://virusgame.alwaysdata.net/">
+                        <h3>Projet 5<br><br>
+                            <small>HTML / CSS / JS<br><br>Jeu d'extermination de virus<h6>cf. From Scratch dev</h6></small>
+                        </h3>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="bdp">
             <div class="title">
                 <h2>Mes ambitions professionnelles</h2>
             </div>
-
             <div class="content">
-            <div class="pictoBx">
-            <i class="fas fa-leaf"></i>
-                <h4>Green Tech</h4></div>
-                <div class="pictoBx"><i class="fas fa-running"></i>
-                <h4>Sport & Digital</h4></div>
-                <div class="pictoBx"><i class="fas fa-server"></i>
-                <h4>Back-End</h4></div>
+                <div class="pictoBx">
+                    <i class="fas fa-leaf" title="Green Tech"></i>
+                    <h4>Green Tech</h4>
+                </div>
+                <div class="pictoBx">
+                    <i class="fas fa-running" title="Sport & Digital"></i>
+                    <h4>Sport & Digital</h4>
+                </div>
+                <div class="pictoBx">
+                    <i class="fas fa-server" title="Back-End"></i>
+                    <h4>Back-End</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -175,31 +271,25 @@
         </div>
         <div class="ligne">
             <div class="title white">
-                <p>
-                    <a href="https://github.com/Dje-Lindien">
-                        <img src="img/github.png" alt=""><br>
-                        GitHub
-                    </a>
-                </p>
+                <a href="https://github.com/Dje-Lindien">
+                    <img class="github" src="img/github.png" alt="">
+                </a>
+                <p>GitHub</p>
             </div>
             <div class="title white">
-                <p>
-                    <a href="CV.pdf" download>
-                        <img src="img/cvv.png" alt=""><br>
-                        Télécharger
-                    </a>
-                </p>           
+                <a href="CV.pdf" download>
+                    <img class="cv" src="img/cvv.png" alt="">
+                </a>
+                <p>Télécharger</p>
             </div>
             <div class="title white">
-                <p>
-                    <button id="copy" type="button"><img src="img/mail.png" alt="" ></button>
-                    <br>
-                    <input type="text" readonly id="to-copy" value="jerem.brld@gmail.com">
-                </p> 
+                <button onclick="copyToClipBoard()">
+                    <img class="mail" src="img/mail.png" alt="" >
+                </button>
+                <p><input id="p_copy" readonly id="to-copy" value="jerem.brld@gmail.com"></p>
             </div>
         </div>
     </section>
-
 
     <!-- Menu caché en JS coté droit  -->
     <div class="sidebar">
@@ -210,10 +300,8 @@
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </div>
-
 </body>
-
-    <!-- JAVASCRIPT  -->
+<!-- JAVASCRIPT  -->
     <script>
         function toggleMenu(){
             const menuToggle = document.querySelector('.toggle');
@@ -222,17 +310,14 @@
 
             sidebar.classList.toggle('active')
         }
+
+        function copyToClipBoard() {
+            var content = document.getElementById('p_copy');
+
+            content.select();
+            document.execCommand('copy');
+
+            alert("Texte copié !");
+        }
     </script>
-
-    <script>
-        var toCopy  = document.getElementById( 'to-copy' ),
-        btnCopy = document.getElementById( 'copy' );
-
-        btnCopy.addEventListener( 'click', function(){
-        toCopy.select();
-        document.execCommand( 'copy' );
-        return false;
-        });
-    </script>
-
 </html>

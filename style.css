@@ -9,6 +9,7 @@
     scroll-behavior: smooth;
 }
 
+/****** Toggle du menu burger ******/
 .toggle {
     position: fixed;
     top: 30px;
@@ -30,16 +31,18 @@
     background-repeat: no-repeat;
 }
 
+/******* Taille des sections **********/
 section {
-    padding: 80px 150px;
-    min-height: 100vh;
+    padding: 150px;
+    min-height: 90vh;
 }
 
 section.contact {
     max-height: 60vh;
-    min-height: 800px;
+    min-height: 591px;
 }
 
+/********* section n°1 - banner / Présentation **********/
 .banner {
     position: relative;
     width: 100%;
@@ -97,7 +100,7 @@ section.contact {
 
 .banner .contentBx {
     max-width: 80%;
-    padding-right: 20%;
+    padding-right: 10%;
 }
 
 .banner .contentBx h4 span {
@@ -126,8 +129,10 @@ p {
     font-weight: 500;
     letter-spacing: 2px;
     color: #fff;
+    overflow: hidden;
 }
 
+/*********** Liste du menu buger ************/
 .sidebar {
     position: fixed;
     background: #000;
@@ -169,6 +174,7 @@ p {
     color: #4b9fcc;
 }
 
+/******** icônes de redirection **********/
 .sci {
     position: absolute;
     left: 100px;
@@ -200,7 +206,7 @@ p {
 .title h2 {
     position: relative;
     color: #4b9fcc;
-    font-size: 1.8em;
+    font-size: 2.2em;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -230,15 +236,17 @@ p {
     background: #fff;
 }
 
+/******** section n°2 - about / Compétences *********/
 .about {
     background: #000;
 }
 
+section.about {
+    padding: 150px 70px;
+}
+
 .about .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 140px;
 }
 
 .about .content .textBx {
@@ -252,15 +260,32 @@ p {
 }
 
 .about .content hr.trait {
-    bottom: -60px;
+    bottom: -150px;
     position: relative;
     background: linear-gradient(to right, black, black, black, black, rgb(48, 47, 47), black, black, black, black);
 }
 
 .about .content .exp {
-   display: inline-flex;
-   flex-wrap: wrap;
-   align-items: center;
+    display: flex;
+}
+
+.about .content .text_exp {
+    padding: 25px 47px 25px 25px;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about .content span {
+    color:  #4b9fcc;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.about .content .text_exp,
+.about .content .icon_exp {
+    width: 50%;
 }
 
 .about .content .exp .gauche,
@@ -268,96 +293,85 @@ p {
     width: 50%;
 }
 
-
-.progress-bar { 
-    width: 300px;
-    height: 24px;
-    margin: 19px 0;
-    background-color: #191919;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-    color: rgb(255, 254, 254);
-}
-
-label {
-    color: rgb(255, 254, 254);
-    position: sticky;
-    display: block;
-    float: left;
-    z-index: 9;
-    margin: 29px 0 0 17px;
-}
-
-.progress-bar::before { 
-    content: '';
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 24px;
-    background: #999;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    z-index: 0;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-}
-
-#html.progress-bar::before { 
-    background-color: rgba(252, 49, 4, 0.686);
-    width: 270px;
-}
-
-#css.progress-bar::before { 
-    background-color: #0130eea8;
-    width: 270px;
-}
-
-#php.progress-bar::before { 
-    background-color: #6660dd90;
-    width: 215px;
-}
-
-#js.progress-bar::before { 
-    background-color: #ebd000a4;
-    width: 100px;
-}
-
-#bts.progress-bar::before { 
-    background-color: #3f2282a6;
-    width: 270px;
-}
-#wp.progress-bar::before {
-    background-color: #424549cb;
-    width: 150px;
-}
-
-.about .content .exp .gauche .textBx,
-.about .content .exp .droite .textBx {
-    width: 100%;
+.about .content .exp .icon_exp {
     display: flex;
-    /* padding-bottom: 170px; */
-    flex-direction: column;
+    padding-bottom: 80px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.about .content .exp .gauche .textBx.align-gauche {
-    justify-content: start;
-    text-align: start;
+/******** Icônes de ma stack ********/
+.drop {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    box-shadow:inset 1px 1px 1px rgba(19, 19, 19, 0.322), 14px 19px 9px rgba(19, 19, 19, 0.322), 5px 2px 2px rgba(19, 19, 19, 0.322), inset -1px 1px 9px rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 35px;
 }
 
-.about .content .exp .droite .textBx.align-droite {
-    justify-content: end;
-    text-align: end;
+.drop img {
+    display: flex;
+    margin: auto;
+    color: #000;
+    width: 38%;
+    height: 38%;
 }
 
-.about .content .exp .droite .textBx.align-droite.barre {
-    align-items: flex-end;
+.drop img.linux,
+.drop img.php {
+    width: 47%;
+    height: 47%;
+}
+
+.drop img.pug {
+    width: 67%;
+    height: 67%;
+}
+
+.drop ion-icon {
+    color: #ffffff;
+    width: 38%;
+    height: 38%;
+}
+
+.drop .icon_text,
+.drop:hover #img,
+.drop:active #img,
+.drop:hover .icon,
+.drop:active .icon {
+    display: none;
+}
+
+.drop .text_drop,
+.drop .image_icon .text_drop {
+    display: none;
+}
+
+.drop:hover .text_drop,
+.drop:active .text_drop,
+.drop:hover .image_icon .text_drop,
+.drop:active .image_icon .text_drop {
+    display: block;
+    color: #060a11;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.drop:hover, .drop:active {
+    box-shadow:  inset 3px 3px 3px 3px rgba(31, 31, 31, 0.9), 1px 1px 9px rgba(40, 40, 40, 0.9);
+    background-color:rgb(198, 198, 198);
+    transform: scale(1.1);
+    -webkit-transition: background-color 0.8s;
+    -moz-transition: background-color 0.8s;
+    -o-transition: background-color 0.8s;
+    transition: background-color 0.8s;
 }
 
 .about .title.white {
@@ -365,7 +379,7 @@ label {
 }
 
 .about .title.white .h3 h3 {
-    padding-top: 70px;
+    padding-top: 150px;
     text-align: left;
 }
 
@@ -374,16 +388,16 @@ label {
 }
 
 .about .content .picto {
-    padding-bottom: 20px;
-    display: inline-flex;
+    padding-top: 80px;
+    display: flex;
     justify-content: space-evenly;
     position: relative;
-    bottom: -90px;    
+    bottom: -100px;
 }
 
 .about .content .picto img {
-    max-width: 85px;
-    max-height: 55px;
+    max-width: 110px;
+    max-height: 80px;
 }
 
 .about .content .picto .imgBx {
@@ -392,11 +406,9 @@ label {
     padding: 20px;
 }
 
-.about .content .picto #un img{ 
+.about .content .picto #un img{
     max-width: 62px;
 }
-
-
 
 .work .content {
     display: flex;
@@ -405,6 +417,7 @@ label {
     flex-wrap: wrap;
 }
 
+/******** section n°3 - work / Projets *********/
 .work .content .workBx {
     position: relative;
     width: 265px;
@@ -459,13 +472,14 @@ label {
 }
 
 .work .bdp  {
-    padding-top: 14vh;
+    padding-top: 18vh;
     justify-content: space-around;
 }
 
 .work .bdp .content {
     justify-content: space-evenly;
     padding-top: 60px;
+    margin: 30px 0 -20px 0
 }
 
 .work .bdp .pictoBx {
@@ -480,16 +494,28 @@ label {
     background: #000;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
+/******** section n°4 - contact ********/
 .contact .ligne {
-    font-size: 0.9em
+    font-size: 0.9em;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+section.contact {
+    padding: 100px;
 }
 
 .contact .title.white.contact {
-    margin-bottom: 160px;
+    position: relative;
+    top: -95px;
+}
+
+.contact .ligne .title.white {
+    width: 200px;
+    height: 150px;
 }
 
 .contact .title.white a {
@@ -497,14 +523,19 @@ label {
     color: #fff;
 }
 
+.contact .title.white p {
+    display: block;
+    height: 60px;
+}
+
 .contact .title.white img {
-    max-width: 75px;
+    width: 70px;
 }
 
 .contact .title.white button {
-    max-width: 75px;
     background-color: black;
     border: none;
+    cursor: pointer;
 }
 
 .contact .title.white button::before {
@@ -521,7 +552,20 @@ label {
     color: white;
     border: none;
     text-align: center;
+    width: 100%;
 }
+
+/******* RESPONSIVE **********/
+@media (max-width: 1300px) {
+    section.banner {
+        height: 1000px;
+        font-size: 0.9em;
+    }
+    .banner .contentBx {
+        height: 100%;
+    }
+}
+
 
 @media (max-width: 991px) {
     .banner .imgSidebar {
@@ -530,10 +574,11 @@ label {
     .banner .contentBx, .sidebar {
         width: 100%;
         padding: 40px;
+        height: 100%;
     }
     .logoText {
         left: 40px;
-        top: 0;
+        top: 40px;
     }
     .toggle {
         right: 40px;
@@ -546,6 +591,9 @@ label {
     section {
         padding: 40px;
     }
+    section.banner {
+        font-size: 1em;
+    }
     .about .content {
         flex-direction: column;
     }
@@ -556,6 +604,12 @@ label {
     .about .content {
         margin-top: 100px;
     }
+    .about .content .picto {
+        bottom: -10px;
+    }
+    .about .content hr.trait {
+        bottom: -70px;
+    }
     .about .content .exp .gauche {
         width: 100%;
         margin-bottom: 30px;
@@ -563,96 +617,123 @@ label {
     .about .content .exp .droite {
         width: 100%;
     }
-    .textBx.align-droite.barre .progress-bar label {
-        right: 150px;
+    .about .content .exp {
+        display: block;
     }
-    .about .content .exp .droite .textBx.align-droite {
-        text-align: start;
-    }
-    .about .content .exp .droite .textBx.align-droite.barre {
-        align-items: flex-start;
-    } 
-    .projets .content .projetsBx {
-        padding: 30px 20px;
-        max-width: 340px;
-        margin: 10px;
-    }
-    .contact .contactForm {
-        width: 100%;
-    }
-    .contactForm .row {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .contact .contactForm .row .col50 {
+    .about .content .text_exp, .about .content .icon_exp {
         width: 100%;
     }
     .sidebar ul li a {
-       font-size: 1.5em; 
+       font-size: 1.5em;
+    }
+    .work .bdp .content {
+        padding-bottom: 60px;
     }
 }
 
+
 @media (max-width: 500px) {
 
-    .banner {
-        height: 850px;
+    h2 {
+        font-size: 1.1em;
     }
 
+    .banner {
+        min-height: 1280px;
+    }
     .banner .contentBx {
         max-width: 100%;
+        height: 1260px;
     }
-
     .banner .contentBx h4.debut {
-        padding-top: 180px;
+        padding-top: 30px;
     }
-
     .banner .contentBx a {
-        margin-bottom: 220px;
+        margin-bottom: 30px;
     }
-
-    .projets .content .projetsBx,
-    .work .content .workBx {
-        max-width: 100%;
-        width: 100%;
-        margin: 25px 0;
-    }
-
     .work .bdp {
         padding-top: 5vh;
     }
-    
     .work .bdp .content {
         justify-content: space-between;
-        padding: 90px 0 60px 0;
+        padding-bottom: 60px;
     }
-    
     .work .bdp .pictoBx h4 {
         display: none;
     }
-
     .work .bdp .pictoBx i {
         font-size: xx-large;
     }
-
     .about .content .picto {
         padding-top: 60px;
         bottom: 0;
     }
-
     .about .content .picto img {
         max-width: 90px;
-        max-height: 50px;   
+        max-height: 50px;
     }
-
     .about .content hr.trait {
         display: none;
     }
+    section.about {
+        padding: 30px 17px;
+    }
+    section.contact {
+        padding: 0;
+    }
+    .about .content {
+        margin-top: 50px;
+    }
+    .about .content .text_exp {
+        padding: 2px;
+        font-size: 1em;
+        text-justify: inter-word;
+    }
+    .about .content .exp {
+        display: block;
+    }
+    .about .content .text_exp, .about .content .icon_exp {
+        width: 100%;
+    }
+    .drop {
+        width: 75px;
+        height: 75px;
+        margin: 15px 10px;
+    }
+    .drop:hover .text_drop, .drop:active .text_drop, .drop:hover .image_icon .text_drop, .drop:active .image_icon .text_drop {
+        font-size: 15px;
+    }
+    .contact .ligne {
+        font-size: 0.9em;
+        display: block;
+        align-self: center;
+    }
+    .contact .ligne .title.white {
+        height: 80px;
+        margin-bottom: 50px;
+        font-size: 0.9em;
+    }
+    .contact .ligne .title.white p {
+        margin: 0;
+    }
+    .contact h2 {
+        padding-top: 40px;
+    }
 }
 
-@media (max-width: 360px) {
 
-    section.banner {
-        height: 1000px;
+@media (max-width: 390px) {
+    section.banner,
+    section.about {
+        min-height: 900px;
+        font-size: 13px;
+    }
+
+    .banner .contentBx {
+        max-width: 100%;
+        height: 100%;
+    }
+    .drop:hover .text_drop, .drop:active .text_drop, .drop:hover .image_icon .text_drop, .drop:active .image_icon .text_drop {
+        font-size: 15px;
     }
 }
